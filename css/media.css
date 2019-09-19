@@ -1,6 +1,28 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 680px) {
   body {
     font-size: 14px;
+  }
+  .blank {
+    padding: 25px;
+  }
+  .blank__ttl {
+    font-size: 24px;
+  }
+  .blank__bar {
+    height: 30px;
+  }
+  .blank__form {
+    max-width: 470px;
+    padding: 25px 40px;
+    margin-bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 13px;
+  }
+  .blank {
+    padding: 0px;
   }
   input {
     font-size: 13px;
@@ -9,7 +31,8 @@
     font-size: 20px;
   }
   .blank__form {
-    padding: 25px;
+    padding: 15px;
+    margin-bottom: 30px !important;
   }
 }
 @media screen and (max-width: 425px) {
