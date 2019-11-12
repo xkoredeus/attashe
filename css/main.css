@@ -250,7 +250,21 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-
+body.successed .blank__ttl,
+body.successed .blank__bar,
+body.successed .blank__form {
+  opacity: 0;
+}
+body.successed .success {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: .7s all ease;
+  -o-transition: .7s all ease;
+  transition: .7s all ease;
+}
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, span::-moz-selection, div::-moz-selection, img::-moz-selection, mark::-moz-selection, ul::-moz-selection, li::-moz-selection {
   color: #fff;
   background-color: #4D99F2;
@@ -447,6 +461,7 @@ textarea:active {
 
 .blank__wrp {
   background: url('../img/background.jpg') no-repeat 50% 50% / cover;
+  padding: 25px 0;
 }
 .blank__wrp::before {
   content: '';
@@ -567,4 +582,27 @@ textarea:active {
   -ms-transform: translateX(-25%);
   -o-transform: translateX(-25%);
   transform: translateX(-25%);
+}
+
+.success {
+  max-width: 560px;
+  width: 100%;
+  padding: 30px 30px;
+  border: 1px solid #ffffff85;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(.8);
+  -ms-transform: translate(-50%, -50%) scale(.8);
+  -o-transform: translate(-50%, -50%) scale(.8);
+  transform: translate(-50%, -50%) scale(.8);
+  opacity: 0;
+}
+.success__ttl {
+  font-family: 'GothamPro-Bold';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.success__descr {
+  max-width: 430px;
 }
